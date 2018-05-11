@@ -288,7 +288,7 @@ void ts3plugin_initMenus(struct PluginMenuItem*** menuItems, char** menuIcon) {
 	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_CHANNEL, MENU_ID_CHANNEL_1, "Channel item 1", "1.png");
 	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_CHANNEL, MENU_ID_CHANNEL_2, "Channel item 2", "2.png");
 	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_CHANNEL, MENU_ID_CHANNEL_3, "Channel item 3", "3.png");
-	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_GLOBAL,  MENU_ID_GLOBAL_1,  "Global item 1",  "1.png");
+	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_GLOBAL,  MENU_ID_GLOBAL_1,  "teste die verbindung",  "1.png");
 	CREATE_MENU_ITEM(PLUGIN_MENU_TYPE_GLOBAL,  MENU_ID_GLOBAL_2,  "Global item 2",  "2.png");
 	END_CREATE_MENUS;  /* Includes an assert checking if the number of menu items matched */
 
@@ -645,7 +645,8 @@ void crapshit() {
 
 	unsigned int error;
 	uint64 scHandlerID;
-	char* identity = "50978280VLTffYCzIibEsMDJP6RfVQICLyAQMFkl4AA0LBSJQXVYpAlJjaldZEC1eVA5xJWEDJQNGXEpwUD5Xb1sie2l0V0p8dnFVUVNFMjN/LAs4FlVrWnF8CmFfV1knWXEBAgFiMXhsRTVBMUpvZ0loQVBVUkI3M3haa0lyK3M1N1JodG0zMUcxTnVnUXhmS1lLanpUUk5kbkZ2dmo=";
+	char* identity;
+	
 
 	error = ts3Functions.spawnNewServerConnectionHandler(1337, &scHandlerID);
 	if (error != ERROR_ok) {
